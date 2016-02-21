@@ -1,0 +1,23 @@
+{
+  "name": "about-me",
+  "homepage": "https://github.com/zacharynet/about-me",
+  "authors": [
+    "Zachary Dalgleish <git@zachary.net.au>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.2.18",
+    "angular-loading-bar": "^0.8.0",
+    "angular": "^1.5.0"
+  }
+}

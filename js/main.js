@@ -1,4 +1,4 @@
-angular.module('home', ['ui.router'])
+angular.module('zacharyApp', ['ui.router','angular-loading-bar'])
   .config(function($stateProvider, $urlRouterProvider){
 
     $urlRouterProvider.otherwise('/'); /* If no other routes are picked, it defaults to this one */
@@ -6,15 +6,19 @@ angular.module('home', ['ui.router'])
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'index.html' /* Template for the URL provided. Can be HTML or can be an external file */
+        templateUrl: 'home.html' /* Template for the URL provided. Can be HTML or can be an external file */
       })
       .state('about', {
-      url: '/about',
-      templateUrl: 'about.html' /* Template for the URL provided. Can be HTML or can be an external file */
-    });
+        url: '/about',
+        templateUrl: 'about.html' /* Template for the URL provided. Can be HTML or can be an external file */
+      })
+      .state('contact', {
+        url: '/contact',
+        templateUrl: 'contact.html'
+      });
   })
-  .controller('directoryController', function(){
-
-
-
-  });
+  // .controller('directoryController', function(){
+  //
+  //
+  //
+  // });
